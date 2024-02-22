@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cybersecurity Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" id="logo">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="data.png">Data</a></li>
+                <li><a href="essay.pdf" target="_blank">Essay</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="video" style="height: 500px; max-width: 100%;">
+            <video autoplay loop muted playsinline style="height: 100%; width: 100%; object-fit: cover;">
+                <source src="globe.mov" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+        
+        <section id="map" style="height: 500px;"></section>
+        
+        <section id="cluster-plot" style="height: 500px; max-width: 100%;">
+            <img src="cluster.jpg" alt="Cluster Scatter Plot" style="height: 100%; width: 100%; object-fit: cover;">
+        </section>
+        
+        <section id="reports">
+            <p>Bruno Pedroso</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; ART211Y Cybersecurity Dashboard</p>
+    </footer>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+        var map = L.map('map').setView([51.505, -0.09], 13);
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+            maxZoom: 19
+        }).addTo(map);
+        var marker = L.marker([51.5, -0.09]).addTo(map);
+        marker.bindPopup("<b>All Clear</b><br>No Threats Detected.").openPopup();
+    </script>
+</body>
+</html>
+
+
+
+

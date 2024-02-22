@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Super Mario Sunshine Analysis</title>
+    <style>
+        body {
+            background-color: #f7d9aa;
+         
+            color: #333;
+            
+            line-height: 1.6;
+            max-width: 800px;
+            
+            margin: auto;
+            
+        }
+
+        header img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        article,
+        .intro-text {
+            background-color: #fff;
+            
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #5599ff;
+            
+            padding-bottom: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.8em;
+        }
+
+        .footer-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer-content img {
+            width: 200px;
+            
+            margin-left: 10px;
+        }
+
+        .images-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            
+            gap: 20px;
+            
+        }
+
+        .image {
+            max-width: 45%;
+            height: auto;
+            margin: 10px;
+        }
+
+        .centered-image {
+            display: block;
+            margin: 0 auto 20px auto;
+            
+            width: 70%;
+                        height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="Title text.png" alt="Super Mario Sunshine: A Digital Analysis">
+    </header>
+    <div class="intro-text">
+
+        <p>This analysis delves into the digital artistry behind the classic video game 'Super Mario Sunshine.'
+            We will explore three distinct aspects of the game: the programming code that brings Mario's iconic hat to
+            life,
+            the vibrant color palette that defines the game's visual identity, and the lively 'Delfino Plaza' theme that
+            sets
+            the tone for Mario's tropical adventure. Each element contributes to the game's enduring appeal and
+            showcases the
+            creative talents of its developers.</p>
+
+    </div>
+    <div class="images-container">
+        <img class="image" src="mario cap.png" alt="Mario's Cap">
+        <img class="image" src="cap code.png" alt="Mario's Cap Code">
+    </div>
+    <article>
+        <section id="marios-hat">
+            <h2>Mario's Hat Analysis</h2>
+
+            <p>The code snippet provided offers a glimpse into the assembly and data structure of Mario's hat in the
+                game.
+                A "diff" section indicates changes in the data, perhaps showing development progress or updates. Labels
+                such as "lbl_80121718"
+                and markers like "@1763" help navigate the code. Assembly directives organize the code into sections,
+                expose global symbols,
+                and align data. The ASCII strings and "incbin" directives refer to external files, likely assets like
+                textures and 3D models
+                used in the game. For instance, "cDirtyFileName" and "cDirtyTexName" suggest file paths to textures,
+                possibly related to
+                environmental elements within the game. The binary data inclusions point to specific sections of the
+                game's ROM file,
+                indicating where the data for the hat is stored.</p>
+
+        </section>
+        <section id="logo-palette">
+            <h2>Game Logo Color Palette</h2>
+
+            <p>The colors extracted from the game's logo provide a snapshot of the palette used throughout 'Super Mario
+                Sunshine'.
+                These selected hues capture the essence of the game's visual theme, from the bright tropical blues and
+                greens to the
+                warm accents that evoke the game's sunny and cheerful environment.</p>
+
+            <img class="centered-image" src="Logo Colors.png" alt="Color Palette Analysis">
+        </section>
+        <section id="game-song">
+            <h2>Delfino Plaza Theme Analysis</h2>
+
+            <p>The waveform visualization of an audio track is a graphical representation of the sound wave's amplitude
+                over time. This visualization is a fundamental tool in music production and analysis as it provides
+                insights into the dynamic range, volume peaks, and power of different sections of a track.</p>
+
+            <p>In the context of 'Delfino Plaza Theme', the waveform helps us understand the composition's structure,
+                identifying where the music crescendos or decrescendos, and highlighting the rhythm and tempo. By
+                examining the waveform, we can also infer the emotional impact of the piece, as larger waves indicate
+                louder, more energetic sections, while smaller waves suggest quieter, more subdued parts.</p>
+
+            <p>Moreover, waveform analysis allows us to pinpoint the exact moments where specific instruments or vocals
+                enter or exit, giving us a clearer picture of the layering and arrangement of the song. As a result, it
+                is an excellent method for visualizing and appreciating the complexities of musical composition in
+                'Super Mario Sunshine'.</p>
+
+            <audio controls autoplay>
+                <source src="Song.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <img class="centered-image" src="waveform.png" alt="Waveform Analysis">
+        </section>
+    </article>
+    <footer>
+        <div class="footer-content">
+            <img src="my name.png" alt="Bruno Pedroso">
+            <img src="mario.gif" alt="Mario GIF">
+        </div>
+    </footer>
+</body>
+
+</html>
